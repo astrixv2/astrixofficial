@@ -63,7 +63,7 @@ We build beautiful websites, branding and digital experiences.
 </div>
 
 <div class="hero-image">
-<img src="ansh.jpg" alt="Ansh">
+<img src="assets/ansh.jpg" alt="Ansh">
 </div>
 
 </section>
@@ -122,25 +122,25 @@ We build beautiful websites, branding and digital experiences.
 <div class="portfolio-grid">
 
 <div class="portfolio-card">
-<img src="project1.jpg" alt="">
+<img src="assets/project1.jpg" alt="">
 <h3>Business Website</h3>
 <p>Modern responsive website design.</p>
 </div>
 
 <div class="portfolio-card">
-<img src="project2.jpg" alt="">
+<img src="assets/project2.jpg" alt="">
 <h3>Brand Identity</h3>
 <p>Logo and branding package.</p>
 </div>
 
 <div class="portfolio-card">
-<img src="project3.jpg" alt="">
+<img src="assets/project3.jpg" alt="">
 <h3>Video Editing</h3>
 <p>Professional content editing.</p>
 </div>
 
 <div class="portfolio-card">
-<img src="project4.jpg" alt="">
+<img src="assets/project4.jpg" alt="">
 <h3>Social Media Design</h3>
 <p>Creative post and campaign design.</p>
 </div>
@@ -152,7 +152,7 @@ We build beautiful websites, branding and digital experiences.
 <section id="founder" class="founder reveal">
 
 <div class="founder-img">
-<img src="ansh.jpg" alt="Ansh">
+<img src="assets/ansh.jpg" alt="Ansh">
 </div>
 
 <div class="founder-text">
@@ -180,7 +180,7 @@ Ansh is the founder of ASTRIX V2, a creative digital agency focused on website d
 Tell us about your project and we'll get back to you.
 </p>
 
-<form class="contact-form">
+<form class="contact-form" id="contactForm">
 
 <input type="text" placeholder="Your Name" required>
 
@@ -203,6 +203,15 @@ Submit Project Request
 </button>
 
 </form>
+<script>
+document.getElementById("contactForm").addEventListener("submit", function(e){
+    e.preventDefault();
+
+    ("Project Request Submitted!");
+
+    this.reset();
+});
+</script>
 
 </section>
 
@@ -241,6 +250,17 @@ Building Brands, Websites & Digital Experiences.
 
 </footer>
 <script src="script.js"></script>
+<div id="successPopup" class="popup">
+    <div class="popup-box">
+        <h2>✅ Request Submitted</h2>
+        <p id="popupOrderId"></p>
+        <p>Thank you for choosing ASTRIX V2 🚀</p>
+
+        <button onclick="closePopup()" class="btn">
+            Close
+        </button>
+    </div>
+</div>
 </body>
 <div id="loader">
     <h1>ASTRIX V2</h1>

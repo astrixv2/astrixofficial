@@ -129,3 +129,41 @@ link.classList.add("active");
 });
 
 });
+document.querySelector(".contact-form")
+.addEventListener("submit", function(e){
+
+e.preventDefault();
+
+let orderNumber =
+Math.floor(Math.random()*900)+100;
+
+document.getElementById("orderId").innerText =
+"Order ID: ASTRIX-" + orderNumber;
+
+document.getElementById("orderResult")
+.style.display = "block";
+
+});
+const form = document.querySelector(".contact-form");
+
+form.addEventListener("submit", function(e){
+
+    e.preventDefault();
+
+    let orderId =
+    "ASTRIX-" +
+    Math.floor(Math.random()*900 + 100);
+
+    document.getElementById("popupOrderId")
+    .innerText = "Order ID: " + orderId;
+
+    document.getElementById("successPopup")
+    .style.display = "flex";
+
+    form.reset();
+});
+
+function closePopup(){
+    document.getElementById("successPopup")
+    .style.display = "none";
+}
