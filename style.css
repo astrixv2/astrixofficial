@@ -519,3 +519,185 @@ to{opacity:1;}
 .popup-box p{
     margin:10px 0;
 }
+.team-card{
+background:#ffffff;
+padding:25px;
+border-radius:15px;
+width:280px;
+transition:.3s;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.team-card h3{
+color:#111;
+}
+
+.team-card p{
+color:#666;
+}
+
+.role{
+color:#9b5cff;
+font-weight:600;
+margin-bottom:10px;
+}
+.team-card{
+background:#fff;
+padding:25px;
+border-radius:15px;
+width:280px;
+overflow:hidden;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.team-card img{
+width:100px;
+height:100px;
+border-radius:50%;
+object-fit:cover;
+display:block;
+margin:0 auto 15px;
+}
+
+.team-card h3{
+color:#111;
+}
+
+.team-card p{
+color:#666;
+}
+
+.role{
+color:#9b5cff;
+font-weight:600;
+margin-bottom:10px;
+}
+.team{
+padding:100px 10% 150px;
+text-align:center;
+}
+
+.team-container{
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:25px;
+margin-top:40px;
+}
+
+.team-card{
+background:#fff;
+width:280px;
+padding:25px;
+border-radius:15px;
+text-align:center;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+overflow:hidden;
+}
+
+.team-card img{
+width:100px;
+height:100px;
+border-radius:50%;
+object-fit:cover;
+display:block;
+margin:0 auto 15px;
+}
+.instagram-float{
+position:fixed;
+bottom:25px;
+right:25px;
+width:60px;
+height:60px;
+background:linear-gradient(45deg,#833AB4,#FD1D1D,#FCAF45);
+color:white;
+font-size:28px;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:50%;
+text-decoration:none;
+box-shadow:0 5px 20px rgba(0,0,0,0.25);
+z-index:9999;
+transition:0.3s;
+}
+
+.instagram-float:hover{
+transform:scale(1.1);
+}
+.team .btn{
+display:block;
+width:fit-content;
+margin:60px auto 0;
+}
+.pricing{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.pricing-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:25px;
+    margin-top:40px;
+}
+
+.pricing-card{
+    background:#fff;
+    width:280px;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    transition:0.3s;
+}
+
+.pricing-card:hover{
+    transform:translateY(-8px);
+}
+
+.pricing-card h2{
+    color:#8b5cf6;
+    margin:15px 0;
+}
+
+.featured{
+    border:2px solid #8b5cf6;
+}
+.pricing-btn{
+    margin-top:40px;
+    text-align:center;
+}
+.pricing-btn{
+    width:100%;
+    text-align:center;
+    margin-top:40px;
+}
+.faq{
+    padding:80px 10%;
+    text-align:center;
+}
+
+.faq-container{
+    max-width:900px;
+    margin:40px auto 0;
+}
+
+.faq-item{
+    background:#fff;
+    padding:20px;
+    margin-bottom:15px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.08);
+    text-align:left;
+}
+
+.faq-item h3{
+    color:#8b5cf6;
+    margin-bottom:10px;
+}
+
+.faq-item p{
+    color:#555;
+}
